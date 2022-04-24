@@ -20,8 +20,8 @@ function downloadCsv() {
 function getData() {
     var values = SpreadsheetApp.getActiveSheet().getDataRange().getValues();
     var data = [];
-    for (var i = 0; i < values.length; i++) {
-        data.push(values[i].join(","));
+    for (const element of values) {
+        data.push(element.join(","));
     }
     return data.join("\r\n");
 }
