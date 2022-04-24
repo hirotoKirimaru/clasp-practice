@@ -31,3 +31,6 @@ mv ./src/.clasp.json ./.clasp.json
 clasp pull
 clasp push
 ```
+
+# ファイルダウンロード
+https://www.pnkts.net/2019/12/18/gas-download-csv
