@@ -34,3 +34,12 @@ clasp push
 
 # ファイルダウンロード
 https://www.pnkts.net/2019/12/18/gas-download-csv
+
+
+# Q&A
+
+
+```
+# ログインすればいい？
+ENOENT: no such file or directory, open '/root/.clasprc.json'
+```
