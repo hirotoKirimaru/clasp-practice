@@ -10,9 +10,11 @@ https://github.com/google/clasp
 npm install -g @google/clasp
 ```
 
+メモ：
+https://docs.google.com/spreadsheets/d/1ria9rddhghlbZ69UL2U07j_HjSYzBMXrpq1h16Pz8Ys/edit#gid=0
 
 
-
+# Docker環境でのログイン
 ```bash
 # コンテナへのログイン
 docker-compose run clasp bash
