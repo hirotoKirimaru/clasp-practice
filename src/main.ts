@@ -8,6 +8,6 @@ function onOpen() {
 }
 
 function showToast() {
-    SpreadsheetApp.getActive().toast("Message", "Title");
+    SpreadsheetApp.getActive().toast("処理が正常に完了しました", "★結果★");
 }
 
