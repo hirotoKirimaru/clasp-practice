@@ -44,6 +44,13 @@ clasp open
 
 # スプレッドシートに飛びたい
 
+
+```bash
+clasp open --addon
+```
+
+
+### もう使わない
 Clasp自体には「create」時に紐づけを指定できるが、create後は特に紐づけることはコマンドではできなさそう。
 
 ```bash
@@ -68,6 +75,17 @@ clasprc.jsonを設定しないと動かないみたい。
 clasp run 
 # そのまま実行
 clasp run "メソッド名"
+```
+
+
+# その他
+
+npmのインストールしているパッケージを新しくしたい。
+
+```bash
+npm install -g npm-check-updates
+# アップデート
+ncm -u
 ```
 
 
