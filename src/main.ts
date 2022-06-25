@@ -40,6 +40,6 @@ function getFileName() {
     return sheetName + '_' + datetime + '.csv';
 }
 
-// function createDraft() {
-//     mail.createDraft();
-// }
+function createDraft() {
+    mail.createDraft();
+}

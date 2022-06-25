@@ -57,6 +57,19 @@ cat .clasp.json | jq ".parentId[]" | sed 's/"//g' | echo ${url_root}$(cat)
 # 出力する
 ```
 
+# ローカルでメソッド実行したい
+
+GCP等々を設定する必要がある？
+clasprc.jsonを設定しないと動かないみたい。
+
+
+```bash
+# 実行可能なメソッド一覧
+clasp run 
+# そのまま実行
+clasp run "メソッド名"
+```
+
 
 # Q&A
 
