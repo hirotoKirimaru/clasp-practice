@@ -1,3 +1,6 @@
+// claspではimport/exportが利用できないため、外部ファイルの関数定義はnamespaceを利用して利用して参照している。
+// ref: https://github.com/google/clasp/blob/e851215b8abe4de282c62c4d61076c85e89a56ba/docs/typescript.md
+
 // スプレッドシート起動時に動くメソッド
 function onOpen() {
     SpreadsheetApp
@@ -5,6 +8,10 @@ function onOpen() {
         .createMenu('★メニュー★')
         .addItem('トースト起動', 'showToast')
         .addItem('CSVダウンロード', 'downloadCsv')
+        .addSubMenu(
+            SpreadsheetApp.getUi().createMenu('メール関連')
+                .addItem('下書きメール作成', 'createDraft')
+        )
         .addToUi();
 }
 
@@ -32,3 +39,7 @@ function getFileName() {
 
     return sheetName + '_' + datetime + '.csv';
 }
+
+// function createDraft() {
+//     mail.createDraft();
+// }

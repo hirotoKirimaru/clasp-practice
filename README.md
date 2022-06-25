@@ -36,6 +36,12 @@ clasp push
 https://www.pnkts.net/2019/12/18/gas-download-csv
 
 
+# デプロイ先のURLが知りたい
+
+```bash
+clasp open
+```
+
 # Q&A
 
 
