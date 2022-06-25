@@ -42,6 +42,22 @@ https://www.pnkts.net/2019/12/18/gas-download-csv
 clasp open
 ```
 
+# スプレッドシートに飛びたい
+
+Clasp自体には「create」時に紐づけを指定できるが、create後は特に紐づけることはコマンドではできなさそう。
+
+```bash
+export url_root=https://docs.google.com/spreadsheets/d/
+echo ${url_root}
+cat .clasp.json | jq ".parentId[]" | sed 's/"//g' | echo ${url_root}$(cat)
+
+# catで設定値を読み込む
+# jqでスプレッドシートを読み込む
+# sedで余計なダブルクォーテーションを削除する
+# 出力する
+```
+
+
 # Q&A
 
 
